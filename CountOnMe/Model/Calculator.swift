@@ -7,7 +7,7 @@
 //
 import Foundation
 // Using Delegate Protocol to send display data to the View Controller:
-protocol DisplayDelegate: class {
+protocol DisplayDelegate: AnyObject {
     func updateDisplay(text: String)
     func presentAlert()
 }
